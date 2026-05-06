@@ -1,6 +1,7 @@
 import streamilt as st
 import pandas as pd
-from sklearn. model_selection import train_test_split from sklearn. linear model import LinearRegression
+from sklearn.model_selection import train_test_split 
+from sklearn.linear model import LinearRegression
 df = pd.read_csv("student_scores.csv")
 X= df.iloc[:, :-1].values
 Y = df.iloc[:, -1].values
