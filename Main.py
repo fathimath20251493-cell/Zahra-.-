@@ -11,5 +11,5 @@ st.title("Exam Score Prediction Model")
 st.write("Enter the no. of hours you studied for the exam")
 hours = st.number_input ("Hours Studied", min_value=0.0, step = 0.1)
 if st.button( "Predict Score"):
-     predicted_score = model.predict([[hours]])[®]
+     predicted_score = model.predict([[hours]])[0]
      st.success (f"Predicted Score: {predicted_score: .2f} ")
